@@ -1,0 +1,39 @@
+exports.data = [
+  {
+    "title": "1000-year flood, South Carolina",
+    "description": "Severe flooding followed record-breaking rains in South Carolina in early October 2015. More than a dozen dams were breached, entire neighborhoods were swamped, hundreds of roads were made impassable and more than a dozen people were killed. Meteorologists classified the event as a “1000-year rain,” meaning that the probability of a rainstorm this heavy occurring in any given year is only 0.1 percent. The dark areas visible in the 2014 image, shown for comparison, are cloud shadows.",
+    "googleLatLon": "https://maps.google.com/maps?ll=34.00071,-81.034814&z=3&t=p&hl=en&gl=US&mapclient=apiv3",
+    "miniMap": "http://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i443&2i744&2e2&3u3&4m2&1u240&2u148&5m5&1e4&5sen&6sus&10b1&12b1&token=40301",
+    "credit": "Images taken by the Operational Land Imager onboard Landsat 8 and the Advanced Land Imager onboard NASA’s Earth Observing-1 satellite. Source: NASA Earth Observatory.",
+    "dates": [
+      "October 15, 2014",
+      "October 8, 2015"
+    ],
+    "source": "http://climate.nasa.gov/system/gallery_images/large/flooding-South-Carolina-black-divide-1200px-80.jpg"
+  },
+  {
+    "title": "Expanding megalopolis, Pearl River Delta, China",
+    "description": "As recently as 1988, China’s Pearl River Delta (Zhu San Jiao) was an interlacing network of rivers and streams among rice paddies, wheat fields, mulberry orchards and fish ponds. Less than three decades later, its cities have ballooned and merged into an interconnected megalopolis. Its population quadrupled from 10 million to 42 million, larger than that of Australia, Argentina or Canada. If considered one entity, the Pearl River Delta region has overtaken Tokyo as the world’s largest urban area by size and population, according to the World Bank. In these images, rural areas—mainly farmland and forest—appear green. Urban areas are gray and white.",
+    "googleLatLon": "https://maps.google.com/maps?ll=22.5333,113.7333&z=3&t=p&hl=en&gl=US&mapclient=apiv3",
+    "miniMap": "http://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i1551&2i818&2e2&3u3&4m2&1u240&2u148&5m5&1e4&5sen&6sus&10b1&12b1&token=36360",
+    "credit": "Credit: Images taken by the Thematic Mapper sensor onboard Landsat 5 and the Operational Land Imager onboard Landsat 8. Source: NASA Earth Observatory",
+    "dates": [
+      "November 24, 1988",
+      "November 16, 2014"
+    ],
+    "source": "http://climate.nasa.gov/system/gallery_images/large/Pearl-River-Delta-China-1920px-80.jpg"
+  },
+  {
+    "title": "Hurricane Katrina aftermath, New Orleans",
+    "description": "Ten years after Hurricane Katrina, the marshes and swamps that buffer New Orleans from the Gulf of Mexico still show changes. These images were taken one week before, two months after and 10 years after the storm. Normal vegetation appears bright green, flood-damaged vegetation is brown and water is dark blue. Katrina delivered a massive surge of water that dramatically enlarged lakes, including Lake Lery and Petit Lake. It also scoured new channels and widened canals in ways that eliminated large amounts of marshland. As seen in the 2015 image, flood-damaged vegetation has returned to its normal color, but the enlarged waterways have persisted.",
+    "googleLatLon": "https://maps.google.com/maps?ll=29.951066,-90.071532&z=3&t=p&hl=en&gl=US&mapclient=apiv3",
+    "miniMap": "http://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i392&2i771&2e2&3u3&4m2&1u240&2u148&5m5&1e4&5sen&6sus&10b1&12b1&token=129007",
+    "credit": "Images taken by the Thematic Mapper sensor onboard Landsat 5 and the Operational Land Imager onboard Landsat 8. Source: NASA Earth Observatory",
+    "dates": [
+      "August 22, 2005",
+      "October 25, 2005",
+      "August 2, 2015"
+    ],
+    "source": "http://climate.nasa.gov/system/gallery_images/large/Hurricane-Katrina-aftermath-1920px-80.jpg"
+  }
+]

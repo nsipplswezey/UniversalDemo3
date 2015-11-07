@@ -1,0 +1,488 @@
+/* video  */
+body {
+            font: 17px/28px Georgia;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #004276;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .article {
+            border-top: solid 1px #000;
+        }
+
+        .section {
+            margin-top: 150px;
+        }
+
+        .section:after {
+            content: "";
+            clear: left;
+            display: block;
+        }
+
+        .section--last {
+            margin-bottom: 130px;
+        }
+
+        .section--credits {
+            color: #999;
+            font-style: oblique;
+        }
+
+        .section--credits a {
+            color: #444;
+        }
+
+        .column {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 580px;
+        }
+
+        .section h3 {
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
+        .scroll-prompt {
+            position: absolute;
+            bottom: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            opacity: 0.8;
+            font-weight: normal;
+            text-transform: uppercase;
+            z-index: 3;
+            margin-left: 7%;
+            padding-left: 112px;
+        }
+
+        .scroll-prompt svg {
+            fill: none;
+            stroke: white;
+            stroke-width: 2px;
+        }
+
+        .dropcap {
+            float: left;
+            font: bold 53px/70px "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: -7px 10px 0 0;
+            height: 1em;
+        }
+
+        .headline,
+        .section h3 {
+            font: 200 30px/40px "nyt-cheltenham", Georgia, serif;
+        }
+
+        .headline {
+            font-size: 45px;
+            line-height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .byline-rule {
+            border-top: 2px solid #000;
+            width: 120px;
+        }
+
+        .byline {
+            font: 12px/2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+            opacity: .5;
+        }
+
+        .byline .author {
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .byline--first {
+            margin-bottom: 14px;
+            opacity: 1;
+            font-weight: 700;
+            padding-top: 23px;
+        }
+
+        @media (max-width: 704px) {
+            .column {
+                margin: auto 5%;
+                max-width: 100%;
+            }
+    }
+
+        .image {
+            width: 120%;
+            margin: 40px -10%;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .image .caption {
+            font: 12px/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+            clear: left;
+            color: #999;
+        }
+
+        @media (min-width: 1200px) {
+            .image--diptych {
+                width: 200%;
+                margin-left: -50%;
+            }
+
+        .image--diptych img {
+            position: relative;
+            width: 50%;
+            float: left;
+            left: 5px;
+        }
+
+        .image--diptych .caption {
+            margin-left: -5px;
+            padding-top: .7em;
+        }
+
+        .image--diptych img:first-child {
+            left: -5px;
+        }
+    }
+        .video {
+            font: bold 17px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .video-container {
+            float: left;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .video-container video,
+        .video-container img {
+            width: 100%;
+            position: absolute;
+        }
+
+        .video-caption {
+            margin-top: 5px;
+            color: #888;
+            padding-bottom: 20px;
+        }
+
+        .video-source {
+            font: 11px/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #999;
+            position: absolute;
+            bottom: 10px;
+            right: 7%;
+            z-index: 3;
+        }
+
+        .column .video {
+            border: solid 8px #f0f0f0;
+            box-sizing: border-box;
+            margin: 40px -10%;
+            width: 120%;
+        }
+
+        .video-sequence:first-child {
+            margin-top: 40px;
+        }
+
+        .video-sequence .video {
+            min-height: 56.25vw;
+        }
+
+        .video-sequence-indicator {
+            font-family: arial;
+            position: absolute;
+            line-height: 1.4em;
+            top: 50%;
+            right: 20px;
+            color: #fff;
+            white-space: pre;
+        }
+
+        .video {
+            float: left;
+        }
+
+        .video + p {
+            clear: left;
+        }
+
+        .video .video-caption {
+            position: absolute;
+            left: 7%;
+            bottom: 20%;
+            width: 240px;
+            z-index: 3;
+            color: #fff;
+            text-shadow: 0 1px 2px #000;
+            padding: 20px 0;
+        }
+
+        .video-sequence .video:last-of-type .video-caption {
+            bottom: 30%;
+        }
+
+        .video .video-caption--long {
+            width: 400px;
+            bottom: 12.44%;
+        }
+
+        .video .video-caption--right {
+            right: 7%;
+            left: inherit;
+            text-align: right;
+        }
+
+        .video .video-caption--center {
+            left: inherit;
+            text-align: center;
+            width: 50%;
+            margin: 0 25%;
+        }
+
+        .video .video-caption--head {
+            top: 0;
+            left: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-caption--head .video-headline {
+            position: absolute;
+            top: 10%;
+            color: white;
+            left: 7%;
+            border-bottom: solid 2px white;
+            text-shadow: none;
+            font-size: 50px;
+            line-height: 55px;
+            padding-bottom: 35px;
+        }
+
+        .video-caption--head .video-summary {
+            position: absolute;
+            top: auto;
+            bottom: 12%;
+            left: 7%;
+            width: 270px;
+            text-shadow: 0 1px 2px #000;
+        }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1440px) and (min-height: 500px) and (max-height: 800px) {
+            .video-caption--head .video-headline {
+                top: 20%;
+            }
+
+        .video-caption--head .video-summary {
+            bottom: 20%;
+        }
+    }
+
+
+/* Maps */
+
+        .map > * {
+            position: absolute;
+        }
+
+        .map {
+            color: #fff;
+            font: 13px/18px "Helvetica Neue",Helvetica,arial,sans-serif;
+            height: 512px;
+            margin: 40px -94px;
+            padding-bottom: 1.4em;
+            position: relative;
+            width: 768px;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .map p {
+            margin: 0;
+            opacity: .95;
+        }
+
+        .map-source {
+            font: 11px/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #999;
+            bottom: -.2em;
+            right: 0;
+        }
+
+        @font-face {
+            font-family: "Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif";
+            src: url(Fonts/Baskerville-Regular-webfont.woff) format("woff");
+            font-style: normal;
+            font-weight: 200;
+        }
+
+
+        .navigation {
+            font: 200 12px/20px "nyt-cheltenham", Georgia, serif;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 39px;
+            background: #000;
+            z-index: 20;
+        }
+
+        .navigation a {
+            color: #fff;
+        }
+
+        .navigation-left,
+        .navigation-left > *,
+        .navigation-right > * {
+            float: left;
+        }
+
+        .navigation-left {
+            margin-left: 7%;
+        }
+
+        .navigation-right {
+            float: right;
+            margin-right: 7%;
+        }
+
+        .navigation-headline:before,
+        .navigation-sections:before,
+        .navigation-shares:before {
+            content: "";
+            float: left;
+            height: 20px;
+            border-right: solid 1px #444;
+            margin: 9px 15px;
+        }
+
+        .navigation-logo {
+            float: left;
+            background: url(http://graphics8.nytimes.com/newsgraphics/2013/10/27/south-china-sea/d4ddc253fb0e8783d3e57b3c5a189fcd2af63c5b/icons.png) 0 -6px;
+            height: 17px;
+            margin: 11px 0 0 0;
+            width: 199px;
+        }
+
+        .navigation-headline {
+            float: left;
+            letter-spacing: .1em;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .navigation-headline:before {
+            margin-top: 0;
+        }
+
+        .navigation-sections:before {
+            margin-right: 5px;
+        }
+
+        .navigation-section {
+            padding: 10px 10px 9px 10px;
+            float: left;
+        }
+
+        .navigation-section:last-child {
+            padding-right: 0;
+        }
+
+        .navigation-logo,
+        .navigation-section,
+        .navigation-volume {
+            opacity: .5;
+        }
+
+        .navigation-logo:hover,
+        .navigation-section:hover,
+        .navigation-section--active,
+        .navigation-volume:hover {
+            opacity: 1;
+        }
+
+        .navigation-marker {
+            position: absolute;
+            margin-top: -80px;
+        }
+
+        .navigation-volume,
+        .navigation-share {
+            display: inline-block;
+            padding: 11px 5px;
+        }
+
+        .navigation-icon {
+            width: 18px;
+            height: 18px;
+            background-image: url(http://graphics8.nytimes.com/newsgraphics/2013/10/27/south-china-sea/d4ddc253fb0e8783d3e57b3c5a189fcd2af63c5b/icons.png);
+        }
+
+        .navigation-share--twitter .navigation-icon { background-position: -6px -28px; }
+        .navigation-share--twitter:hover .navigation-icon { background-position: -6px -48px; }
+        .navigation-share--facebook .navigation-icon { background-position: -26px -28px; }
+        .navigation-share--facebook:hover .navigation-icon { background-position: -26px -48px; }
+        .navigation-share--email .navigation-icon { background-position: -28px -68px; width: 22px; }
+        .navigation-share--email:hover .navigation-icon { background-position: -5px -68px; }
+        .navigation-volume .navigation-icon { background-position: -52px -68px; }
+        .navigation-volume.navigation-volume--muted .navigation-icon { background-position: -72px -68px; }
+
+
+/* Footer  */
+
+            .footer-section {
+                background: #000;
+                margin-top: 0;
+                padding: 7px 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            .footer-section a {
+                border-right: 1px solid #ccc;
+                color: #aaa;
+                font: 10px sans-serif;
+                margin-right: 7px;
+                padding-right: 7px;
+                text-decoration: none;
+                white-space: nowrap;
+            }
+
+            .footer-section a:last-child {
+                border-right: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .footer-section a:hover {
+                text-dceoration: underline;
+            }
+
+            .footer-section ~ * {
+                position: absolute;
+                top: -1000px;
+            }
