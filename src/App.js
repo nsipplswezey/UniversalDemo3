@@ -136,7 +136,8 @@ var mockVideoSequenceData = [
   }
 ];
 
-var VideoContent = React.createClass({render: function() {
+var VideoContent = React.createClass({
+  render: function() {
     /*for however many dates we have
     we clip the image into that many equal size rectangles
     left to right
