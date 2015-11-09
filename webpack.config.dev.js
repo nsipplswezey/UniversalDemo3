@@ -26,10 +26,10 @@ module.exports = {
       loader: "style-loader!css-loader"
     }, {
       test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
-      loader: 'url-loader'
+      loaders: ['url-loader']
     }, {
       test: /\.json$/,
-      loader: ['json']
+      loaders: ['json']
     }
     ]
   }
